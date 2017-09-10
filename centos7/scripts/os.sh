@@ -1,0 +1,3 @@
+sed -i "s/^.*requiretty/#Defaults requiretty/" /etc/sudoers
+yum -y install gcc make gcc-c++ kernel-devel-`uname -r` kernel-headers perl bzip2
+yum update -y kernel
