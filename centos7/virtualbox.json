@@ -11,7 +11,7 @@
       "ssh_port": 22,
       "ssh_wait_timeout": "10000s",
       "shutdown_command": "echo '/sbin/halt -h -p' > /tmp/shutdown.sh; echo 'vagrant'|sudo -S sh '/tmp/shutdown.sh'",
-      "disk_size": 10240,
+      "disk_size": 18432,
       "vboxmanage": [
         [ "modifyvm", "{{.Name}}", "--memory", "512" ],
         [ "modifyvm", "{{.Name}}", "--cpus", "1" ]
@@ -45,7 +45,7 @@
       "type": "vagrant",
       "override": {
         "virtualbox": {
-          "output": "CentOS-7-x86_64-Minimal-1611.box"
+          "output": "CentOS-7-x86_64-Minimal-1708.box"
         }
       }
     }
